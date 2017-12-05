@@ -1,0 +1,12 @@
+/* ------------------------------------------------------------ *\
+	Demo Styles
+\* ------------------------------------------------------------ */
+
+body { margin: 0; }
+
+.section { display: flex; align-items: center; justify-content: center; width: 100vw; height: 100vh; font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 500; }
+.section .section__inner { width: 640px; }
+.section .section__inner .simple-tabs { margin-bottom: 30px; }
+
+.section .btn-show-tab { padding: 8px 16px; border: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 500; font-size: 16px; background-color: #3f51b5; color: #fff; cursor: pointer; transition: background-color .4s ease; }
+.section .btn-show-tab:hover { background-color: rgba(63, 81, 181, .9); }

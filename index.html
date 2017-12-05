@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>Simple Tabs Plugin</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/simple-tabs.css" />
+	<link rel="stylesheet" href="css/demo.css" />
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/simple-tabs-redone.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	
+	<section class="section" id="demo-container">
+		<div class="section__inner">
+			<div class="simple-tabs">
+				<div class="simple-tabs__head">
+					<h2>Tabs Heading(Optional)</h2>	
+				</div><!-- /.simple-tabs__head -->
+
+				<ul class="simple-tabs__nav">
+					<li class="active">
+						<a href="#tab-1">Tab 1 Link</a>
+					</li>
+					
+					<li>
+						<a href="#tab-2">Tab 2 Link</a>
+					</li>
+					
+					<li>
+						<a href="#tab-3">Tab 3 Link</a>
+					</li>
+				</ul>
+
+				<div class="simple-tabs__content">
+					<div id="tab-1" class="active">
+						<p>Tab 1 Content</p>
+					</div><!-- /#tab-1 -->
+					
+					<div id="tab-2">
+						<p>Tab 2 Content</p>
+					</div><!-- /#tab-2 -->
+
+					<div id="tab-3">
+						<p>Tab 3 Content</p>
+					</div><!-- /#tab-3 -->
+				</div>
+			</div><!-- /.simple-tabs -->
+
+			<button class="btn-show-tab" data-tab="#tab-1">Show tab 1</button>
+
+			<button class="btn-show-tab" data-tab="#tab-2">Show tab 2</button>
+
+			<button class="btn-show-tab" data-tab="#tab-3">Show tab 3</button>
+		</div><!-- /.section__inner -->
+	</section><!-- /#demo-container.section -->
+
+</body>
+</html>
