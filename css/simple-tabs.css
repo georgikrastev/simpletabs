@@ -23,5 +23,5 @@
 
 /*  Fade Animation  */
 
-.simple-tabs .simple-tabs__content > div.fade { display: block; width: 100%; opacity: 0; visibility: hidden; transition: opacity .4s ease, visibility .4s ease; position: absolute; left: 0; top: 0; }
+.simple-tabs .simple-tabs__content > div.fade { display: block; opacity: 0; visibility: hidden; transition: opacity .4s ease, visibility .4s ease; position: absolute; left: 0; right: 0; top: 0; }
 .simple-tabs .simple-tabs__content > div.active { position: relative; opacity: 1; visibility: visible; }
