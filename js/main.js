@@ -3,6 +3,8 @@
 		// Init Tabs plugin and demonstrate callbacks
 		$('.simple-tabs').simpleTabs({
 			animate: true,
+			theme: 'indigo',
+			defaultTab: 0,
 			onInit: function() {
 				console.log('Initialized.');
 			},

@@ -4,10 +4,10 @@
 
 .simple-tabs { background-color: #fff; box-shadow: 0 3px 15px rgba(0,0,0, .1); }
 
-.simple-tabs .simple-tabs__head { background-color: #303f9f; padding: 16px 24px; }
+.simple-tabs .simple-tabs__head { padding: 16px 24px; }
 .simple-tabs .simple-tabs__head h2 { font-weight: 500; font-size: 1.5rem; color: #fff; margin: 0; }
 
-.simple-tabs .simple-tabs__nav { display: flex; align-items: center; list-style: none; margin: 0; padding: 0; background-color: #3f51b5; border-bottom: 1px solid #eee; position: relative; z-index: 2; }
+.simple-tabs .simple-tabs__nav { display: flex; align-items: center; list-style: none; margin: 0; padding: 0; position: relative; z-index: 2; }
 .simple-tabs .simple-tabs__nav a { display: block; text-decoration: none; padding: 16px 24px; background-color: transparent; color: rgba(255, 255, 255, .5); position: relative; transition: background-color .4s ease, color .4s ease; }
 .simple-tabs .simple-tabs__nav a:after { content: ''; width: 100%; height: 5px; background-color: #fff; opacity: 0; transform: scale(0, 1); position: absolute; left: 0; bottom: 0; z-index: 2; transition: opacity .4s ease, transform .4s ease; }
 
@@ -25,3 +25,102 @@
 
 .simple-tabs .simple-tabs__content > div.fade { display: block; opacity: 0; visibility: hidden; transition: opacity .4s ease, visibility .4s ease; position: absolute; left: 0; right: 0; top: 0; }
 .simple-tabs .simple-tabs__content > div.active { position: relative; opacity: 1; visibility: visible; }
+
+/* ------------------------------------------------------------ *\
+	Color Themes
+\* ------------------------------------------------------------ */
+
+/*  Red  */
+
+.simple-tabs--red .simple-tabs__head { background-color: #d32f2f; }
+.simple-tabs--red .simple-tabs__nav { background-color: #f44336; }
+
+/*  Pink  */
+
+.simple-tabs--pink .simple-tabs__head { background-color: #c2185b; }
+.simple-tabs--pink .simple-tabs__nav { background-color: #e91e63; }
+
+/*  Purple  */
+
+.simple-tabs--purple .simple-tabs__head { background-color: #7b1fa2; }
+.simple-tabs--purple .simple-tabs__nav { background-color: #9c27b0; }
+
+/*  Deep Purple  */
+
+.simple-tabs--deep-purple .simple-tabs__head { background-color: #512da8; }
+.simple-tabs--deep-purple .simple-tabs__nav { background-color: #673ab7; }
+
+/*  Indigo  */
+
+.simple-tabs--indigo .simple-tabs__head { background-color: #303f9f; }
+.simple-tabs--indigo .simple-tabs__nav { background-color: #3f51b5; }
+
+/*  Blue  */
+
+.simple-tabs--blue .simple-tabs__head { background-color: #1976d2; }
+.simple-tabs--blue .simple-tabs__nav { background-color: #2196f3; }
+
+/*  Light Blue  */
+
+.simple-tabs--light-blue .simple-tabs__head { background-color: #0288d1; }
+.simple-tabs--light-blue .simple-tabs__nav { background-color: #03a9f4; }
+
+/*  Cyan  */
+
+.simple-tabs--cyan .simple-tabs__head { background-color: #0097a7; }
+.simple-tabs--cyan .simple-tabs__nav { background-color: #00bcd4; }
+
+/*  Teal  */
+
+.simple-tabs--teal .simple-tabs__head { background-color: #00796b; }
+.simple-tabs--teal .simple-tabs__nav { background-color: #009688; }
+
+/*  Green  */
+
+.simple-tabs--green .simple-tabs__head { background-color: #388e3c; }
+.simple-tabs--green .simple-tabs__nav { background-color: #4caf50; }
+
+/*  Light Green  */
+
+.simple-tabs--light-green .simple-tabs__head { background-color: #689f38; }
+.simple-tabs--light-green .simple-tabs__nav { background-color: #8bc34a; }
+
+/*  Lime  */
+
+.simple-tabs--lime .simple-tabs__head { background-color: #afb42b; }
+.simple-tabs--lime .simple-tabs__nav { background-color: #cddc39; }
+
+/*  Yellow  */
+
+.simple-tabs--yellow .simple-tabs__head { background-color: #fbc02d; }
+.simple-tabs--yellow .simple-tabs__nav { background-color: #ffeb3b; }
+
+/*  Amber  */
+
+.simple-tabs--amber .simple-tabs__head { background-color: #ffa000; }
+.simple-tabs--amber .simple-tabs__nav { background-color: #ffc107; }
+
+/*  Orange  */
+
+.simple-tabs--orange .simple-tabs__head { background-color: #f57c00; }
+.simple-tabs--orange .simple-tabs__nav { background-color: #ff9800; }
+
+/*  Deep Orange  */
+
+.simple-tabs--deep-orange .simple-tabs__head { background-color: #e64a19; }
+.simple-tabs--deep-orange .simple-tabs__nav { background-color: #ff5722; }
+
+/*  Brown  */
+
+.simple-tabs--brown .simple-tabs__head { background-color: #5d4037; }
+.simple-tabs--brown .simple-tabs__nav { background-color: #795548; }
+
+/*  Grey  */
+
+.simple-tabs--grey .simple-tabs__head { background-color: #616161; }
+.simple-tabs--grey .simple-tabs__nav { background-color: #9e9e9e; }
+
+/*  Blue Grey  */
+
+.simple-tabs--blue-grey .simple-tabs__head { background-color: #455a64; }
+.simple-tabs--blue-grey .simple-tabs__nav { background-color: #607d8b; }

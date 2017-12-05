@@ -13,8 +13,18 @@
 		var _this = this;
 		var settings = _this.settings;
 		var $tabsContainer = _this.element;
+		var $tabsNav = $tabsContainer.find('.simple-tabs__nav li');
+		var $tabsContent = $tabsContainer.find('.simple-tabs__content > div');
 
 		_this.buildClases($tabsContainer);
+
+		$tabsNav
+			.eq(settings.defaultTab)
+			.add($tabsContent.eq(settings.defaultTab))
+				.addClass('active')
+					.siblings()
+					.removeClass('active');
+
 		_this.activateTab();
 
 		// Trigger `onInit` callback function
@@ -26,9 +36,10 @@
 		var fadeClass = _this.settings.animate === true ? 'fade' : '';
 
 		$container
-			.find('.simple-tabs__content')
-				.children()
-				.addClass(fadeClass);
+			.addClass('simple-tabs--' + _this.settings.theme)
+				.find('.simple-tabs__content')
+					.children()
+					.addClass(fadeClass);
 	}
 
 	simpleTabs.prototype.updateTab = function($activeTabLink, $activeTab) {
@@ -94,11 +105,12 @@
 	}
 
 	$.fn.simpleTabs.defaults = {
-		animate: 					true, // Boolean -- Add/Remove tab transition
-		defaultTab: 				0, // Int -- Index of the opened tab on page load
-		onInit: 					function() {},
-		onBeforeChange: 			function() {},
-		onAfterChange: 				function() {}
+		animate: 					true, 			// Boolean -- Add/Remove tab transition
+		theme: 						'indigo', 		// String -- Color Theme
+		defaultTab: 				0, 				// Int -- Index of the opened tab on page load
+		onInit: 					function() {},	// Function -- callback called after tab init
+		onBeforeChange: 			function() {},	// Function -- callback called before tab change
+		onAfterChange: 				function() {}	// Function -- callback called after tab change
 	}
 
 })( jQuery );
